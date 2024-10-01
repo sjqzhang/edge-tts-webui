@@ -1,12 +1,13 @@
-.text-area {
-    height: 586px;
+.text-area,textarea {
+    min-height: 640px;
+    
 }
 
 .audio {
-    height: 150px;
+    height: 180px;
 }
 .example{
-    height: 100px;
+    height: 180px;
 }
 #submit-btn {
     color: #fff;

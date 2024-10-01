@@ -32,7 +32,8 @@ async def textToSpeech(text, voices, rate, volume):
         volumes = "+" + str(volume) + "%"
     else:
         volumes = str(volume) + "%"
-    communicate = edge_tts.Communicate(text,
+    lines=text.split("\n")
+    communicate = edge_tts.Communicate("".join(lines),
                                        voices,
                                        rate=rates,
                                        volume=volumes,
